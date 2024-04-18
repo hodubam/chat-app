@@ -1,1 +1,157 @@
-* {margin:0}
+
+/* col block width(12 step) --------------------------------*/
+.col-1{width:8.333333%;}
+.col-2{width:16.666667%;}
+.col-3{width:25%;}
+.col-4{width:33.333333%;}
+.col-5{width:41.666667%;}
+.col-6{width:50%;}
+.col-7{width:58.333333%;}
+.col-8{width:66.666667%;}
+.col-9{width:75%;}
+.col-10{width:83.333333%;}
+.col-11{width:91.666667%;}
+.col-12{width:100%;}
+
+
+/* color -------------------------------------------------- */
+.primary{color:#4285F4;border-color:#4285F4;}
+.secondary{color:#6c757d;border-color:#ababab;}
+.success{color:#0090d9;border-color:#0090d9;}
+.info{color:#86550c;border-color:#86550c;}
+.warning{color:#fbb05e;border-color:#fbb05e;}
+.danger{color:#d04545;border-color:#d04545;}
+.red{color:#e00;border-color:#e00;}
+.orange{color:orange;border-color:#ffa500;}
+.yellow{color:#fe0;border-color:#fe0;}
+.green{color:#4c916c;border-color:#4c916c;}
+.blue{color:#2391f8;border-color:#2391f8;}
+.black{color:#111;border-color:#111;}
+.dark{color:#555;border-color:#999;}
+.light{color:#757575;border-color:#ccc;}
+.white{color:#fff;border-color:#fff;}
+.rblue{color:#07549c;border-color:#07549c;}
+
+
+/* margin ------------------------------------ */
+.mt-0{margin-top:0!important;}
+.mt-5{margin-top:5px!important;}
+.mt-10{margin-top:10px!important;}
+.mt-15{margin-top:15px!important;}
+.mt-20{margin-top:20px!important;}
+.mt-25{margin-top:25px!important;}
+.mt-30{margin-top:30px!important;}
+.mt-35{margin-top:35px!important;}
+.mt-40{margin-top:40px!important;}
+.mt-45{margin-top:45px!important;}
+.mt-50{margin-top:50px!important;}
+.mr-0{margin-right:0!important;}
+.mr-5{margin-right:5px!important;}
+.mr-10{margin-right:10px!important;}
+.mr-15{margin-right:15px!important;}
+.mr-20{margin-right:20px!important;}
+.mr-25{margin-right:25px!important;}
+.mr-30{margin-right:30px!important;}
+.mr-35{margin-right:35px!important;}
+.mr-40{margin-right:40px!important;}
+.mr-45{margin-right:45px!important;}
+.mr-50{margin-right:50px!important;}
+.mb-0{margin-bottom:0!important;}
+.mb-5{margin-bottom:5px!important;}
+.mb-10{margin-bottom:10px!important;}
+.mb-15{margin-bottom:15px!important;}
+.mb-20{margin-bottom:20px!important;}
+.mb-30{margin-bottom:30px!important;}
+.mb-35{margin-bottom:35px!important;}
+.mb-40{margin-bottom:40px!important;}
+.mb-45{margin-bottom:45px!important;}
+.mb-50{margin-bottom:50px!important;}
+.ml-0{margin-left:0!important;}
+.ml-5{margin-left:5px!important;}
+.ml-10{margin-left:10px!important;}
+.ml-15{margin-left:15px!important;}
+.ml-20{margin-left:20px!important;}
+.ml-30{margin-left:30px!important;}
+.ml-35{margin-left:35px!important;}
+.ml-40{margin-left:40px!important;}
+.ml-45{margin-left:45px!important;}
+.ml-50{margin-left:50px!important;}
+
+
+
+/* business ------------------------------------------------*/
+
+body{
+    height: 100vh;
+    width: 100vh;
+    background:url('/images/background.png') no-repeat center;
+    background-size: cover;
+}
+
+.login-container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:360px;
+    height:300px;
+    margin: -150px 0 0 -180px;
+    padding:0 30px;
+    background-color:#e00;
+    box-shadow:10px 10px 20px rgba(0,0,0,.5);
+}
+
+.login-input {
+    width:100%;
+    height:70px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #c2c8d0;
+}
+
+.w-container{
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+}
+.w-header{
+    position:absolute;
+    width:100%;
+    height:20%;
+}
+.w-body{
+    position:absolute;
+    width:100%;
+    height:60%;
+    top:20%;
+    text-align: center;
+}
+
+.w-footer{
+    position:absolute;
+    width:100%;
+    height:20%;
+    bottom:0;
+}
+
+.w-basic{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:80%
+}
+
+.w-btn{
+    padding-block: 1px;
+    padding-inline: 6px;
+    width:100%;
+    border-color:#fff;
+    border-width:1px;
+    height:80px;
+    font-size:30px;
+    border-radius:100px;
+    font-weight:bold;
+    background: #e4e4fa;
+}

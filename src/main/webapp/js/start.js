@@ -4,5 +4,5 @@ function goToLogin() {
 }
 
 function goToSignUp() {
-    window.location.href="/pages/signUp.html";
+    window.location.href="/pages/signIn.html";
 }

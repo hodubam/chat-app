@@ -102,25 +102,6 @@ body {
     /*background-color: #4c916c;*/
 }
 
-.login-container{
-    position:absolute;
-    top:50%;
-    left:50%;
-    width:360px;
-    height:300px;
-    margin: -150px 0 0 -180px;
-    padding:0 30px;
-    background-color:#e00;
-    box-shadow:10px 10px 20px rgba(0,0,0,.5);
-}
-
-.login-input {
-    width:100%;
-    height:70px;
-    font-size: 16px;
-    border-radius: 6px;
-    border: 1px solid #c2c8d0;
-}
 
 .w-container{
     position: absolute;
@@ -176,4 +157,16 @@ body {
     border-radius:100px;
     font-weight:bold;
     background: #e4e4fa;
+}
+
+.w-input{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
 }

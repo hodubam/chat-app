@@ -3,6 +3,6 @@ function login() {
 
 }
 
-function signUp() {
+function signIn() {
 
 }

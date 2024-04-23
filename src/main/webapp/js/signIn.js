@@ -1,8 +1,8 @@
 
-function login() {
-
+function goToSignIn() {
+    window.location.href="/pages/signIn.html";
 }
 
-function signIn() {
-
+function goToSignUp() {
+    window.location.href="/pages/signUp.html";
 }

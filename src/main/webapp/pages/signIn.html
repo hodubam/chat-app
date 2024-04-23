@@ -9,14 +9,18 @@
 <body>
 <form action="#">
     <div class="w-container">
-        <div class="w-header">
-            <p class="w-p">Sign In</p>
+        <div class="w-header mt-30">
+            <span class="w-span"><h1>Sinder</h1></span>
         </div>
         <div class="w-body">
             <div class="w-basic">
-                <input class="w-input" type="text" placeholder="username" required>
-                <input class="w-input" type="password" placeholder="password" required>
-                <button class="w-btn" type="submit">Sign In</button>
+                <span class="w-span">Username or email</span>
+                <input class="w-input mt-10" type="text" required>
+                <span class="w-span">Password</span>
+                <input class="w-input mt-10" type="password" required>
+                <span class="w-span ta-r primary">Forgot Password?</span>
+                <button class="w-btn mt-20 mb-10" type="submit">Sign In</button>
+                <span class="w-span ta-c">Don't have an account? <span class="primary" onclick="goToSignUp()">Sign up</span></span>
             </div>
         </div>
         <div class="w-footer">

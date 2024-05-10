@@ -98,20 +98,17 @@ signUpForm.addEventListener('submit', function (event) {
             headers: {
                 'Content-Type': 'application/json'
             }
-        })
-            .then(response => {
-                if (response.ok) {
-                    return response.text();
-                }
-                throw new Error('Network response was not ok.');
-            })
-            .then(data => {
-                console.log(data); // 서버 응답 출력
-                // 원하는 처리 수행
-            })
-            .catch(error => {
-                console.error('There was a problem with the fetch operation:', error);
-            });
+        }).then(response => {
+            if (response.ok) {
+                return response.text();
+            }
+            throw new Error('Network response was not ok.');
+        }).then(data => {
+            console.log(data); // 서버 응답 출력
+            // 원하는 처리 수행
+        }).catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
     }
 
 

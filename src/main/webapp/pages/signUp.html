@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <title>Sign Up</title>
     <link rel="stylesheet" href="/css/style.css">
-
+    <script src="/js/signUp.js"></script>
 </head>
-<body>
+<body onLoad="">
 <form id="sighUpForm">
     <div class="w-container">
         <div class="w-header">
-            <span class="w-span"><h1>Sinder</h1></span>
+            <span><h1>Sinder</h1></span>
         </div>
         <div class="w-body">
             <div class="w-basic">
-                <span class="w-span">Email</span>
+                <span>Email</span>
                 <input class="w-input mt-10" name="email" type="text" required>
-                <span class="w-warn hide" id="email_fail_message">Please enter a valid email address</span><br>
-                <span class="w-span">Username</span>
+                <span class="w-warn hide" id="emailFailMessage">Please enter a valid email address</span><br>
+                <span>Username</span>
                 <input class="w-input mt-10" name="username" type="text" required>
-                <span class="w-warn hide" id="username_fail_message">Username should consist of letters and numbers only, and be between 4 and 16 characters in length</span><br>
-                <span class="w-span">Password</span>
+                <span class="w-warn hide" id="usernameFailMessage">Username should consist of letters and numbers only, and be between 4 and 16 characters in length</span><br>
+                <span>Password</span>
                 <input class="w-input mt-10" name="password" type="password" required>
-                <span class="w-warn hide" id="password_fail_message">Password must be at least 8 characters long</span><br>
-                <span class="w-span">Confirm Password</span>
-                <input class="w-input mt-10" name="confirm_password" type="password" required>
-                <span class="w-warn hide" id="confirm_password_fail_message">Confirmed password does not match the password</span><br>
+                <span class="w-warn hide" id="passwordFailMessage">Password must be at least 8 characters long</span><br>
+                <span>Confirm Password</span>
+                <input class="w-input mt-10" name="confirmPassword" type="password" required>
+                <span class="w-warn hide" id="confirmPasswordFailMessage">Confirmed password does not match the password</span><br>
                 <button id="submit" class="w-btn mt-20 mb-10" style="background-color:darkgray" type="submit">Sign Up</button>
             </div>
         </div>
@@ -34,6 +34,5 @@
         </div>
     </div>
 </form>
-<script src="/js/signUp.js"></script>
 </body>
 </html>

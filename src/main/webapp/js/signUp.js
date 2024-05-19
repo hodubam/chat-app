@@ -1,11 +1,12 @@
+'use strict'
 let email = document.querySelector('[name="email"]');
-let emailFailMessage = document.querySelector('#email_fail_message');
+let emailFailMessage = document.querySelector('#emailFailMessage');
 let username = document.querySelector('[name="username"]');
-let usernameFailMessage = document.querySelector('#username_fail_message');
+let usernameFailMessage = document.querySelector('#usernameFailMessage');
 let password = document.querySelector('[name="password"]');
-let passwordFailMessage = document.querySelector('#password_fail_message');
-let confirmPassword = document.querySelector('[name="confirm_password"]');
-let confirmPasswordFailMessage = document.querySelector('#confirm_password_fail_message');
+let passwordFailMessage = document.querySelector('#passwordFailMessage');
+let confirmPassword = document.querySelector('[name="confirmPassword"]');
+let confirmPasswordFailMessage = document.querySelector('#confirmPasswordFailMessage');
 let signUpForm = document.querySelector('#sighUpForm');
 let submitButton = document.querySelector('#submit');
 
@@ -90,6 +91,7 @@ signUpForm.addEventListener('submit', function (event) {
             "email":email.value
             ,"username":username.value
             ,"password":password.value
+            ,"confirmPassword":confirmPassword.value
         };
 
         fetch('http://localhost:8080/signUp', {
@@ -100,16 +102,23 @@ signUpForm.addEventListener('submit', function (event) {
             }
         }).then(response => {
             if (response.ok) {
-                return response.text();
+                return response.json();
             }
             throw new Error('Network response was not ok.');
         }).then(data => {
-            console.log(data); // 서버 응답 출력
+            if (data.success) {
+                console.log('Success:', data.message);
+                // 성공 처리 로직 추가 (예: 페이지 리디렉션, 알림 표시 등)
+                alert('Registration successful.');
+                window.location.href = '/pages/signIn.html';
+            } else {
+                console.log('Error:', data.message);
+                // 오류 처리 로직 추가 (예: 오류 메시지 표시 등)
+                alert('Registration failed: ' + data.message);
+            }
             // 원하는 처리 수행
         }).catch(error => {
             console.error('There was a problem with the fetch operation:', error);
         });
     }
-
-
 })

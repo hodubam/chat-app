@@ -1,4 +1,4 @@
-
+'use strict'
 function goToSignIn() {
     window.location.href="/pages/signIn.html";
 }

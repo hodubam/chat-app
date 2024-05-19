@@ -8,7 +8,7 @@ public class BasicUtils {
 
     private static BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
-    public static String createUUID() {
+    public static String getUUID() {
         UUID uuid = UUID.randomUUID();
         return uuid.toString();
     }

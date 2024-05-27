@@ -5,6 +5,8 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +17,8 @@ import java.util.Map;
 @RestController("/user")
 public class UserController {
 
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Autowired
     private SqlSessionTemplate template;
@@ -46,6 +50,9 @@ public class UserController {
         }
 
         try {
+            String hashedPassword = passwordEncoder.encode(formData.get("password").toString());
+            formData.put("password_hash", hashedPassword);
+
             // 사용자 추가
             formData.put("USER_KEY", BasicUtils.getUUID());
             template.insert("USER.insertNewUser", formData);

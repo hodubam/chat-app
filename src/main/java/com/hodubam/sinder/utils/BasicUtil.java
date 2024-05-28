@@ -4,7 +4,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.util.UUID;
 
-public class BasicUtils {
+public class BasicUtil {
 
     private static BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 

@@ -39,4 +39,7 @@
         )
     </insert>
 
+    <select id="getUserByEmail" resultType="map">
+        SELECT * FROM USERS WHERE EMAIL = #{email}
+    </select>
 </mapper>
